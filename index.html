@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mibar Kitchen - Gigitan Kecil, Rasa Besar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="Mibar Kitchen Logo" class="logo-img">
+                <span class="brand-name">Mibar Kitchen</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="checkout.html" class="cart-link">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Gigitan Kecil, <span class="highlight">Rasa Besar</span></h1>
+                <p class="hero-subtitle">Promix Nugget Bites - Nugget Premium Tanpa Pengawet</p>
+                <p class="hero-description">100% Tempe & Ayam Pilihan Terbaik • Tinggi Protein • Crispy Luar, Empuk Dalam</p>
+                <a href="#products" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Produk Unggulan Kami</h2>
+            <div class="products-grid">
+                <!-- Product Card -->
+                <div class="product-card">
+                    <div class="product-slider" data-slider="promix">
+                        <div class="slider-container">
+                            <img src="images/promix-1.jpg" alt="Promix Chicken Bites 1" class="slider-img active">
+                            <img src="images/promix-2.jpg" alt="Promix Chicken Bites 2" class="slider-img">
+                        </div>
+                        <button class="slider-btn prev" aria-label="Previous">‹</button>
+                        <button class="slider-btn next" aria-label="Next">›</button>
+                        <div class="slider-dots">
+                            <span class="dot active" data-index="0"></span>
+                            <span class="dot" data-index="1"></span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Promix Chicken Bites</h3>
+                        <p class="product-tagline">Nugget Tempe Ayam Premium</p>
+                        <div class="product-specs">
+                            <span class="spec-badge">250gr</span>
+                            <span class="spec-badge">Tanpa Pengawet</span>
+                            <span class="spec-badge">High Protein</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rp21.000</span>
+                            <span class="price-unit">/kotak</span>
+                        </div>
+                        <button class="btn btn-add-cart" data-id="promix-bites" data-name="Promix Chicken Bites" data-price="21000" data-image="images/promix-1.jpg">
+                            Tambah ke Keranjang
+                        </button>
+                        <button class="btn-detail" data-product="promix-bites">Lihat Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Tentang Mibar Kitchen</h2>
+                    <p class="about-description">
+                        Mibar Kitchen menghadirkan makanan rumahan bergaya premium: sehat, praktis, dan lezat. 
+                        Produk perdana kami adalah <strong>Promix Nugget Bites</strong> - nugget tempe ayam premium 
+                        tanpa bahan pengawet, tinggi protein, dan dibuat dari tempe pilihan terbaik.
+                    </p>
+                    <div class="vision-mission">
+                        <div class="vm-item">
+                            <h3>Visi</h3>
+                            <p>Menjadi merek nugget bites terdepan yang menggigit selera jutaan orang dengan rasa lezat dan inovatif setiap hari.</p>
+                        </div>
+                        <div class="vm-item">
+                            <h3>Misi</h3>
+                            <p>Menyajikan nugget bites premium berbahan segar, crispy luar empuk dalam untuk pengalaman ngemil tak tertahankan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-info">
+                <h3>Mibar Kitchen</h3>
+                <p>Hidangan Sehat dari Dapur Cinta</p>
+                <p class="footer-tagline">"Gigitan Kecil, Rasa Besar - Promix Nugget Bites!"</p>
+            </div>
+            <div class="footer-contact">
+                <h4>Hubungi Kami</h4>
+                <p>📱 WhatsApp: 087875110992</p>
+                <p>📧 Email: mibarkitchen@gmail.com</p>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="admin.html" >&copy; 2025 Mibar Kitchen. All rights reserved.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="images/promix-1.jpg" alt="Promix Chicken Bites" id="modalImage">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle">Promix Chicken Bites</h2>
+                    <p class="modal-description">Nugget tempe berkualitas premium tanpa bahan pengawet. 100% murni tempe pilihan terbaik.</p>
+                    
+                    <div class="modal-section">
+                        <h3>Komposisi</h3>
+                        <p>120 gram tempe, 160 gram ayam fillet, 2 butir telur, tepung roti, tepung terigu, bawang putih, bawang merah, garam, merica, dan bumbu pilihan.</p>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>Nilai Gizi (per 100gr)</h3>
+                        <div class="nutrition-grid">
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Kalori</span>
+                                <span class="nutrition-value">204.99 kcal</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Protein</span>
+                                <span class="nutrition-value">19.48g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Lemak</span>
+                                <span class="nutrition-value">6.44g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Karbohidrat</span>
+                                <span class="nutrition-value">14.73g</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-label">Serat</span>
+                                <span class="nutrition-value">1.99g</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>Cara Penyajian</h3>
+                        <p>🍳 <strong>Goreng:</strong> 5 menit hingga golden brown</p>
+                        <p>🔥 <strong>Air Fryer:</strong> 12 menit, suhu 180°C hingga golden brown</p>
+                    </div>
+
+                    <div class="modal-price">
+                        <span class="price">Rp21.000</span>
+                        <span class="price-unit">/kotak (250gr)</span>
+                    </div>
+                    <button class="btn btn-primary btn-modal-add" data-id="promix-bites" data-name="Promix Chicken Bites" data-price="21000" data-image="images/promix-1.jpg">
+                        Tambah ke Keranjang
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage-compat.js"></script>
+   <script src="firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
